@@ -25,7 +25,8 @@ public class BeeHive {
 
 
         // Random from 1 -> 3
-        Random rand = new Random();
+        private static final Random RANDOM = new Random();
+            this.random = RANDOM.nextDouble();
 
         for (int i = 0 ; i < 7 ; i++) {
             int r = rand.nextInt(3) + 1;
